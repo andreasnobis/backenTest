@@ -3,7 +3,7 @@
   "namespace": "MyFirstViewTest",
   "menuEntries": [
     {
-      "label": "My Test",
+      "label": "DO-AddressCheck",
       "menu": "order",
       "urlKey": "hello-world",
       "entryPoint": "index.html"
