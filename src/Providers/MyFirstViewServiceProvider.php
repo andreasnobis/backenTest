@@ -9,6 +9,6 @@ use Plenty\Plugin\ServiceProvider;
     {
         public function register()
         {
-          echo "<hr>Hallo Welt<hr>";
+          //echo "<hr>Hallo Welt<hr>";
         }
     }
