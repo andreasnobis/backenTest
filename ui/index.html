@@ -8,4 +8,6 @@ Test Anfang5
 
 <iframe src="https://2.it-stnn.de/programme/CheckOrder"/>
 
-Test Ende
+    {% if config('MyPlugin.show_title') == "1" %}
+        <h1>{{ config('MyPlugin.title_text') }}</h1>
+    {% endif %}
