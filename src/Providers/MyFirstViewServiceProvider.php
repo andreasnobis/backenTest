@@ -2,7 +2,6 @@
 
 namespace MyFirstViewTest\Providers;
 
-
 use Plenty\Plugin\ServiceProvider;
 
     class MyFirstViewServiceProvider extends ServiceProvider
