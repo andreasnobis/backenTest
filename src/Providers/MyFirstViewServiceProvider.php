@@ -10,9 +10,6 @@ use Plenty\Plugin\ServiceProvider;
         public function register()
         {
 
-        }
-        
-       
-        
+        }       
     }
 
