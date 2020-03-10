@@ -1,112 +1,52 @@
-    {
-      "formatVersion": 1.0,
-      "menu": {
-         "Config.global": {
-            "label": "Config.global",
-            "fullWidth": true,
-            "formFields": {
-               "global.headerLogo": {
-                  "type": "inputFile",
-                  "required": true,
-                  "label": "Config.globalHeaderLogoLabel",
-                  "options": {
-                     "tooltip": "Config.globalHeaderLogoTooltip",
-                     "defaultValue": ""
-                  }
-               },
-               "global.category": {
-                  "type": "categoryPicker",
-                  "required": true,
-                  "label": "Config.globalCategoryLabel",
-                  "options": {
-                     "tooltip": "Config.globalCategoryTooltip",
-                     "defaultValue": ""
-                  }
-               },
-               "global.container": {
-                  "type": "verticalContainer",
-                  "label": "Config.globalContainerLabel",
-                  "options": {
-                     "containerEntries":
-                     {
-                        "global.container.apiKey": {
-                           "type": "inputText",
-                           "label": "Config.globalContainerApiKeyLabel",
-                           "required": false
-                        }
-                     }
-                  }
-               }
-            }
-         },
-         "additional": {
-            "label": "Config.additionalSettings",
-            "menu": {
-               "languages": {
-                  "label": "Config.additionalSettingsLanguagesLabel",
-                  "formFields": {
-                     "additional.languages.supportedLanguages": {
-                        "type": "multiCheckBox",
-                        "required": false,
-                        "label": "Config.additionalSettingsSupportedLanguagesLabel",
-                        "options": {
-                           "tooltip": "Config.additionalSettingsSupportedLanguagesTooltip",
-                           "defaultValue": "de, en",
-                           "checkBoxValues": [
-                              {
-                                 "value": "de",
-                                 "caption":"Config.languageGerman"
-                              },
-                              {
-                                 "value": "en",
-                                 "caption": "Config.languageEnglish"
-                              },
-                              {
-                                 "value": "fr",
-                                 "caption": "Config.languageFrench"
-                              },
-                              {
-                                 "value": "es",
-                                 "caption": "Config.languageSpanish"
-                              }
-                           ]
-                        }
-                     }
-                  }
-               },
-               "moreSettings": {
-                  "label": "Config.additionalSettingsMoreLabel",
-                  "formFields": {
-                     "additional.more.fulfillmentClient": {
-                        "type": "selectBox",
-                        "required": false,
-                        "label": "Config.additionalSettingsMoreFulfillmentClientLabel",
-                        "options": {
-                           "tooltip": "Config.additionalSettingsMoreFulfillmentClientTooltip",
-                           "defaultValue": "dhl",
-                           "selectBoxValues": [
-                              {
-                                 "value": "dhl",
-                                 "caption": "Config.fulfillmentDHL"
-                              },
-                              {
-                                 "value": "ups",
-                                 "caption": "Config.fulfillmentUPS"
-                              },
-                              {
-                                 "value": "hermes",
-                                 "caption": "Config.fulfillmentHermes"
-                              },
-                              {
-                                 "value": "dpd",
-                                 "caption": "Config.fulfillmentDPD"
-                              }
-                           ]
-                        }
-                     }
-                  }
-               }
-            }
-         }
-      }
-    }
+[
+        {
+            "tab"       : "Categories",
+            "key"       : "global.category.home",
+            "label"     : "Home page",
+            "type"      : "category_select"
+        },
+        {
+            "tab"       : "Header",
+            "key"       : "header.company_logo_align",
+            "label"     : "Align company logo",
+            "type"      : "dropdown",
+            "possibleValues": {
+                "0" : "Left",
+                "1" : "Center",
+                "2" : "Right"
+            },
+            "default"   : "0"
+        },
+        {
+            "tab"       : "Footer",
+            "key"       : "footer.col_1_title",
+            "label"     : "Title of first column",
+            "type"      : "text",
+            "default"   : "Shop"
+        },
+        {
+            "tab"       : "SEO",
+            "key"       : "seo.text_area",
+            "label"     : "Text for search engines",
+            "type"      : "textarea",
+            "default"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        },
+        {
+            "tab"       : "Item",
+            "key"       : "item.data",
+            "label"     : "Show item information",
+            "type"      : "multi_select",
+            "possibleValues": {
+                "item.technical_data": "Technical data",
+                "item.description": "Description"
+            },
+            "default"   : "all"
+        },
+        {
+           "tab"       : "Basket",
+           "key"       : "basket.variations",
+           "label"     : "Show Change variation button",
+           "type"      : "checkbox",
+           "default"   : true
+       }
+]
