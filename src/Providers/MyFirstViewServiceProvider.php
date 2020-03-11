@@ -14,7 +14,7 @@ use Plenty\Plugin\ServiceProvider;
         // access configuration from PHP
         public function getTitle()
         {
-            if( $config->get('MyPlugin.show_title') == "1" )
+           /* if( $config->get('MyPlugin.show_title') == "1" )
               {
                   return $config->get('MyPlugin.title_text');
               }
@@ -22,6 +22,8 @@ use Plenty\Plugin\ServiceProvider;
               {
                   return "No Title in Config";
               }
+             */
+                    return "Es funktioniert zumindest irgendwas";
         }
     }
 
