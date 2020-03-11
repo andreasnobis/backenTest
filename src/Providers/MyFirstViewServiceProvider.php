@@ -3,17 +3,20 @@
 namespace MyFirstViewTest\Providers;
 
 use Plenty\Plugin\ServiceProvider;
+use Plenty\Plugin\RouteServiceProvider;
+use Plenty\Plugin\Routing\Router;
 
     class HelloWorldServiceProvider extends ServiceProvider
     {
 
-        /**
-         * Register the service provider.
-         */
+            public function map(Router $router)
+        {
+
+        }
 
         public function register()
         {
-
+             $this->getApplication()->register(HelloWorldRouteServiceProvider::class);
         }
     }
 
