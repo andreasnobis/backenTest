@@ -3,7 +3,7 @@
             "tab"       : "SystemPfad",
             "key"       : "MyPlugin.show_title",
             "label"     : "Pfad benutzen",
-            "type"      : "checkbox"
+            "type"      : "checkbox",
             "default"   : "1"
         },
         {
