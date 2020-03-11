@@ -1,9 +1,17 @@
 [
         {
-            "tab"       : "Categories",
-            "key"       : "global.category.home",
-            "label"     : "Home page",
-            "type"      : "category_select"
+            "tab"       : "SystemPfad",
+            "key"       : "MyPlugin.show_title",
+            "label"     : "Pfad benutzen",
+            "type"      : "checkbox"
+            "default"   : "1"
+        },
+        {
+            "tab"       : "SystemPfad2",
+            "key"       : "MyPlugin.title_text",
+            "label"     : "Systempfad",
+            "type"      : "textarea",
+            "default"   : "https://2.it-stnn.de/programme/CheckOrder/#/overview"
         },
         {
             "tab"       : "Header",
