@@ -11,5 +11,8 @@ Test Anfang5
  <!--
  //-->
     {% if config('MyPlugin.show_title') == "1" %}
-        <h1>{{ config('MyPlugin.title_text') }}</h1>
+        <h1>IF{{ config('MyPlugin.title_text') }}</h1>
+    {% else %}
+        <h1>ELSE{{ config('MyPlugin.getTitle') }}</h1>
     {% endif %}
+    
