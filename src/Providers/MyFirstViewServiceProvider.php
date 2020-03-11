@@ -8,15 +8,9 @@ use Plenty\Plugin\Routing\Router;
 
     class HelloWorldServiceProvider extends ServiceProvider
     {
-
-            public function map(Router $router)
-        {
-
-        }
-
         public function register()
         {
-             $this->getApplication()->register(HelloWorldRouteServiceProvider::class);
+            $this->getApplication()->register(HelloWorldRouteServiceProvider::class);
         }
     }
 
