@@ -23,7 +23,8 @@ use Plenty\Plugin\ServiceProvider;
                   return "No Title in Config";
               }
              */
-                    return "Es funktioniert zumindest irgendwas";
+            $config="Es funktioniert zumindest irgendwas";
+            return $config;
         }
     }
 
