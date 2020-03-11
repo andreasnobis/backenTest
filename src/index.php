@@ -1,5 +1,5 @@
 <?php
-
+/*
  // access configuration from PHP
         function getTitle(ConfigRepository $config):string
         {
@@ -12,3 +12,4 @@
                   return "No Title in Config";
               }
         }
+*/
