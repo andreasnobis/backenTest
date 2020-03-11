@@ -10,8 +10,9 @@ use Plenty\Plugin\ServiceProvider;
         {
 
         }   
+        
         // access configuration from PHP
-        public function getTitle(ConfigRepository $config):string
+        public function getTitle()
         {
             if( $config->get('MyPlugin.show_title') == "1" )
               {
