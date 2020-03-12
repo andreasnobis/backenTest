@@ -1,12 +1,12 @@
 {
-  "defaultEntryPoint": "/ui/userClass.php",
+  "defaultEntryPoint": "index.html",
   "namespace": "MyFirstViewTest",
   "menuEntries": [
     {
       "label": "DO-AddressCheck",
       "menu": "order",
       "urlKey": "hello-world",
-      "entryPoint": "/ui/userClass.php"
+      "entryPoint": "index.html"
     }
   ]
 }
