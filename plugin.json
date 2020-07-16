@@ -6,7 +6,7 @@
   "author": "plentymarkets GmbH",
   "type": "backend",
   "serviceProvider": "MyFirstViewTest\\Providers\\MyFirstViewServiceProvider",
-  "version":"0.0.7",
+  "version":"0.0.8",
   "license":"MIT",
   "keywords":["terra","backend", "first", "view"],
   "pluginIcon":"icon_plugin_xs.png",
